@@ -1,23 +1,16 @@
-import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import React from "react";
-import {
-  StatusBar,
-  SafeAreaView,
-  StyleSheet,
-  Text,
-  View,
-  Platform,
-} from "react-native";
+import { StatusBar as ExpoStatusBar } from "expo-status-bar";
+import { StatusBar, SafeAreaView, StyleSheet, Text, View } from "react-native";
 
-console.log (StatusBar.currentHeight);
+console.log(StatusBar.currentHeight);
 export default function App() {
   return (
     <>
-      <SafeAreaView style={{ flex: 1, marginTop: StatusBar.currentHeight }}>
-        <View style={{ padding: 16, backgroundColor: "green" }}>
+      <SafeAreaView style={styles.container}>
+        <View style={styles.search}>
           <Text>Search</Text>
         </View>
-        <View style={{ flex: 1, padding: 16, backgroundColor: "lightblue" }}>
+        <View style={styles.list}>
           <Text>List</Text>
         </View>
       </SafeAreaView>
@@ -27,9 +20,10 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  stingo: {
+  container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+    marginTop: StatusBar.currentHeight,
   },
+  search: { padding: 16, backgroundColor: "green" },
+  list: { flex: 1, padding: 16, backgroundColor: "lightblue" },
 });

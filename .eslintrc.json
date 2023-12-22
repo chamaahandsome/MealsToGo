@@ -1,0 +1,12 @@
+{
+  "extends": "@react-native-community",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "quotes": [2, "double", { "avoidEscape": true }]
+  },
+  "parser": "@babel/eslint-parser"
+
+  // "extends": ["eslint-config-react-app"]
+}
