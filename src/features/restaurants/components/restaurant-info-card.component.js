@@ -9,40 +9,16 @@ import { Text } from "../../../components/typography/text.component";
 import star from "../../../../assets/star";
 import open from "../../../../assets/open";
 
-const RestaurantCard = styled(Card)`
-  backgroundcolor: ${(props) => props.theme.colors.bg.primary};
-`;
-
-const RestaurantCardCover = styled(Card.Cover)`
-  padding: ${(props) => props.theme.space[3]};
-  backgroundcolor: ${(props) => props.theme.colors.bg.primary};
-`;
-
-const Address = styled.Text`
-  font-family: ${(props) => props.theme.fonts.body};
-  font-size: ${(props) => props.theme.fontSizes.caption};
-`;
-
-const Info = styled.View`
-  padding: ${(props) => props.theme.space[3]};
-`;
-
-const Rating = styled.View`
-  flex-direction: row;
-  padding-top: ${(props) => props.theme.space[1]};
-  padding-bottom: ${(props) => props.theme.space[1]};
-`;
-
-const Section = styled.View`
-  flex-direction: row;
-  align-items: center;
-`;
-
-const SectionEnd = styled.View`
-  flex: 1;
-  flex-direction: row;
-  justify-content: flex-end;
-`;
+import {
+  Icon,
+  RestaurantCard,
+  RestaurantCardCover,
+  Address,
+  Info,
+  Rating,
+  Section,
+  SectionEnd,
+} from "./restaurant-info-card.styles";
 
 // const Open = styled(SvgXml)`
 //   flex-direction: row;
@@ -82,15 +58,13 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
           </Rating>
           <SectionEnd>
             {isClosedTemporarily && (
-              <Text variant="label" style={{ color: "red" }}>
-                CLOSED TEMPORARILY
-              </Text>
+              <Text variant="error">CLOSED TEMPORARILY</Text>
             )}
             <Spacer position="left" size="medium" />
             {isOpenNow && <SvgXml xml={open} width={20} height={20} />}
             <Spacer />
             <Spacer position="left" size="medium" />
-            <Image style={{ width: 15, height: 15 }} source={{ uri: icon }} />
+            <Icon source={{ uri: icon }} />
             <Spacer />
           </SectionEnd>
         </Section>
