@@ -19,10 +19,6 @@ import {
   SectionEnd,
 } from "./restaurant-info-card.styles";
 
-// const Open = styled(SvgXml)`
-//   flex-direction: row;
-// `;ssssssssssssss
-
 export const RestaurantInfoCard = ({ restaurant = {} }) => {
   const {
     name = "Kibandaski",
@@ -43,7 +39,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
     <RestaurantCard elevation={5}>
       <RestaurantCardCover key={name} source={{ uri: photos[0] }} />
       <Info>
-        <Text>{name}</Text>
+        <Text variant="label">{name}</Text>
         <Section>
           <Rating>
             {ratingArray.map((_, index) => (
