@@ -62,6 +62,7 @@ export default function App() {
               },
               tabBarActiveTintColor: "#00CED1",
               tabBarInactiveTintColor: "gray",
+              headerShown: false,
             })}
           >
             <Tab.Screen name="Restaurants" component={RestaurantsScreen} />
