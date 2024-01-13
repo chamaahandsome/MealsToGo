@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components/native";
 
-import { FlatList } from "react-native";
+import { FlatList, Pressable } from "react-native";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
 import { Spacer } from "../../../components/spacer/spacer.component";
 import { SafeArea } from "../../../utils/safe-area.component";
@@ -24,27 +24,27 @@ const RestaurantList = styled(FlatList).attrs({
   background-color: ${(props) => props.theme.colors.bg.tertiary};
 `;
 
-export const RestaurantsScreen = () => {
+export const RestaurantsScreen = ({ navigation }) => {
   const { isLoading, error, restaurants } = useContext(RestaurantsContext);
-
-  if (isLoading) {
-    return (
-      <LoadingContainer>
-        <ActivityIndicator size="large" color="#00CED1" />
-      </LoadingContainer>
-    );
-  }
 
   return (
     <SafeArea>
+      {isLoading && (
+        <LoadingContainer>
+          <ActivityIndicator size="large" color="#00CED1" />
+        </LoadingContainer>
+      )}
+
       <Search />
       <RestaurantList
         data={restaurants}
         renderItem={({ item }) => {
           return (
-            <Spacer position="bottom" size="small">
-              <RestaurantInfoCard restaurant={item} />
-            </Spacer>
+            <Pressable onPress={() => navigation.navigate("RestaurantDetails")}>
+              <Spacer position="bottom" size="small">
+                <RestaurantInfoCard restaurant={item} />
+              </Spacer>
+            </Pressable>
           );
         }}
         keyExtractor={(item) => item.name}
