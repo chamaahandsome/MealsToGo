@@ -1,49 +1,53 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext, createContext, useEffect } from "react";
 
 import {
-  locationRequest,
-  locationTransform,
-} from "../restaurants/location/location.service";
+  restaurantsRequest,
+  restaurantsTransform,
+} from "./restaurants.service";
 
-export const LocationContext = React.createContext();
+import { LocationContext } from "./location/location.context";
 
-export const LocationContextProvider = ({ children }) => {
-  const [keyword, setKeyword] = useState("San Francisco");
-  const [location, setLocation] = useState(null);
+export const RestaurantsContext = createContext();
+
+export const RestaurantsContextProvider = ({ children }) => {
+  const [restaurants, setRestaurants] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+  const { location } = useContext(LocationContext);
 
-  const onSearch = (searchKeyword) => {
+  const retrieveRestaurants = (loc) => {
     setIsLoading(true);
-    setKeyword(searchKeyword);
-    if (!searchKeyword.length) {
-      // don't do anything
-      return;
-    }
-    locationRequest(searchKeyword.toLowerCase())
-      .then(locationTransform)
-      .then((result) => {
-        setIsLoading(false);
-        setLocation(result);
-        console.log(result);
-      })
-      .catch((err) => {
-        setIsLoading(false);
-        setError(err);
-      });
+    setRestaurants([]);
+
+    setTimeout(() => {
+      restaurantsRequest(loc)
+        .then(restaurantsTransform)
+        .then((results) => {
+          setIsLoading(false);
+          setRestaurants(results);
+        })
+        .catch((err) => {
+          setIsLoading(false);
+          setError(err);
+        });
+    }, 2000);
   };
+  useEffect(() => {
+    if (location) {
+      const locationString = `${location.lat},${location.lng}`;
+      retrieveRestaurants(locationString);
+    }
+  }, [location]);
 
   return (
-    <LocationContext.Provider
+    <RestaurantsContext.Provider
       value={{
+        restaurants,
         isLoading,
         error,
-        location,
-        search: onSearch,
-        keyword,
       }}
     >
       {children}
-    </LocationContext.Provider>
+    </RestaurantsContext.Provider>
   );
 };
