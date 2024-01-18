@@ -33,6 +33,7 @@ export const RestaurantsScreen = ({ navigation }) => {
 
   return (
     <SafeArea>
+      <Search />
       <RestaurantContainer>
         {isLoading && (
           <LoadingContainer>
@@ -40,7 +41,6 @@ export const RestaurantsScreen = ({ navigation }) => {
           </LoadingContainer>
         )}
 
-        <Search />
         <RestaurantList
           data={restaurants}
           renderItem={({ item }) => {
