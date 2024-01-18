@@ -16,6 +16,10 @@ const LoadingContainer = styled.View`
   justify-content: center;
 `;
 
+const RestaurantContainer = styled.View`
+  flex: 1;
+`;
+
 const RestaurantList = styled(FlatList).attrs({
   contentContainerStyle: {
     padding: 16,
@@ -29,30 +33,32 @@ export const RestaurantsScreen = ({ navigation }) => {
 
   return (
     <SafeArea>
-      {isLoading && (
-        <LoadingContainer>
-          <ActivityIndicator size="large" color="#00CED1" />
-        </LoadingContainer>
-      )}
+      <RestaurantContainer>
+        {isLoading && (
+          <LoadingContainer>
+            <ActivityIndicator size="large" color="#00CED1" />
+          </LoadingContainer>
+        )}
 
-      <Search />
-      <RestaurantList
-        data={restaurants}
-        renderItem={({ item }) => {
-          return (
-            <TouchableOpacity
-              onPress={() =>
-                navigation.navigate("RestaurantDetails", { restaurant: item })
-              }
-            >
-              <Spacer position="bottom" size="small">
-                <RestaurantInfoCard restaurant={item} />
-              </Spacer>
-            </TouchableOpacity>
-          );
-        }}
-        keyExtractor={(item) => item.name}
-      />
+        <Search />
+        <RestaurantList
+          data={restaurants}
+          renderItem={({ item }) => {
+            return (
+              <TouchableOpacity
+                onPress={() =>
+                  navigation.navigate("RestaurantDetails", { restaurant: item })
+                }
+              >
+                <Spacer position="bottom" size="small">
+                  <RestaurantInfoCard restaurant={item} />
+                </Spacer>
+              </TouchableOpacity>
+            );
+          }}
+          keyExtractor={(item) => item.name}
+        />
+      </RestaurantContainer>
     </SafeArea>
   );
 };
