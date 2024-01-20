@@ -11,9 +11,9 @@ import { MapScreen } from "../../features/map/screens/map.screen";
 const Tab = createBottomTabNavigator();
 
 const TAB_ICON = {
-  Restaurants: "md-restaurant",
-  Map: "md-map",
-  Settings: "md-settings",
+  Restaurants: "fast-food-sharp",
+  Map: "map",
+  Settings: "settings",
 };
 
 const Settings = () => (
@@ -30,24 +30,12 @@ const createScreenOptions = ({ route }) => {
     ),
     tabBarActiveTintColor: "#00CED1",
     tabBarInactiveTintColor: "gray",
-    tabBarStyle: [
-      {
-        display: "flex",
-      },
-      null,
-    ],
   };
 };
 
 export const AppNavigator = () => (
   <NavigationContainer>
-    <Tab.Navigator
-      screenOptions={createScreenOptions}
-      tabBarOptions={{
-        activeTintColor: "#00CED1",
-        inactiveTintColor: "gray",
-      }}
-    >
+    <Tab.Navigator screenOptions={createScreenOptions}>
       <Tab.Screen
         name="Restaurants List"
         component={RestaurantsNavigator}
