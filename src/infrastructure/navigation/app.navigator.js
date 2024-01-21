@@ -11,7 +11,7 @@ import { MapScreen } from "../../features/map/screens/map.screen";
 const Tab = createBottomTabNavigator();
 
 const TAB_ICON = {
-  Restaurants: "fast-food-sharp",
+  Kibandaski: "fast-food-sharp",
   Map: "map",
   Settings: "settings",
 };
@@ -37,7 +37,7 @@ export const AppNavigator = () => (
   <NavigationContainer>
     <Tab.Navigator screenOptions={createScreenOptions}>
       <Tab.Screen
-        name="Restaurants List"
+        name="Kibandaski"
         component={RestaurantsNavigator}
         options={{ headerShown: false }}
       />
