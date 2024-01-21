@@ -32,7 +32,6 @@ export const Favorite = ({ restaurant }) => {
         size={24}
         color={isFavorite ? "red" : "white"}
       />
-      <AntDesign name="heart" size={24} color="red" />
     </FavoriteButton>
   );
 };
