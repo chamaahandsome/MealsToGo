@@ -3,7 +3,7 @@ import React from "react";
 import { ThemeProvider } from "styled-components/native";
 
 import { initializeApp } from "firebase/app";
-// import { getAuth } from "firebase/auth";
+import { getAuth } from "firebase/auth";
 
 import {
   useFonts as useOswald,
@@ -29,7 +29,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-// const auth = getAuth(app);
+const auth = getAuth(app);
 
 export default function App() {
   const [oswaldLoaded] = useOswald({
