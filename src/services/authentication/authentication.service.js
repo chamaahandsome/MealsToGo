@@ -1,5 +1,5 @@
-/* eslint-disable prettier/prettier */
-import { signInWithEmailAndPassword } from "firebase/auth";
+import firebase from "firebase/app";
+import "firebase/auth";
 
-export const loginRequest = (auth, email, password) =>
-  signInWithEmailAndPassword(auth, email, password);
+export const loginRequest = (email, password) =>
+  firebase.auth().signInWithEmailAndPassword(email, password);

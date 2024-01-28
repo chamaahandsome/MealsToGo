@@ -13,7 +13,7 @@ export const AccountScreen = ({ navigation }) => {
   return (
     <AccountBackground>
       <AccountCover />
-      <Title>Kibandaski</Title>
+      <Title>KIBANDASKI</Title>
       <AccountContainer>
         <AuthButton
           icon="email"
