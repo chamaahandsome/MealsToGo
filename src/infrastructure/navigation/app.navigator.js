@@ -9,6 +9,10 @@ import { SafeArea } from "../../utils/safe-area.component";
 import { MapScreen } from "../../features/map/screens/map.screen";
 import { AuthenticationContext } from "../../services/authentication/authentication.context";
 
+import { RestaurantsContextProvider } from "../../services/restaurants/restaurants.context";
+import { LocationContextProvider } from "../../services/restaurants/location/location.context";
+import { FavoritesContextProvider } from "../../services/favorites/favorites.context";
+
 const Tab = createBottomTabNavigator();
 
 const TAB_ICON = {
@@ -37,27 +41,33 @@ const createScreenOptions = ({ route }) => {
 };
 
 export const AppNavigator = () => (
-  <Tab.Navigator
-    screenOptions={createScreenOptions}
-    tabBarOptions={{
-      activeTintColor: "#00CED1",
-      inactiveTintColor: "gray",
-    }}
-  >
-    <Tab.Screen
-      name="Vibanda"
-      component={RestaurantsNavigator}
-      options={{ headerShown: false }}
-    />
-    <Tab.Screen
-      name="Map"
-      component={MapScreen}
-      options={{ headerShown: false }}
-    />
-    <Tab.Screen
-      name="Settings"
-      component={Settings}
-      options={{ headerShown: false }}
-    />
-  </Tab.Navigator>
+  <FavoritesContextProvider>
+    <LocationContextProvider>
+      <RestaurantsContextProvider>
+        <Tab.Navigator
+          screenOptions={createScreenOptions}
+          tabBarOptions={{
+            activeTintColor: "#00CED1",
+            inactiveTintColor: "gray",
+          }}
+        >
+          <Tab.Screen
+            name="Vibanda"
+            component={RestaurantsNavigator}
+            options={{ headerShown: false }}
+          />
+          <Tab.Screen
+            name="Map"
+            component={MapScreen}
+            options={{ headerShown: false }}
+          />
+          <Tab.Screen
+            name="Settings"
+            component={Settings}
+            options={{ headerShown: false }}
+          />
+        </Tab.Navigator>
+      </RestaurantsContextProvider>
+    </LocationContextProvider>
+  </FavoritesContextProvider>
 );
