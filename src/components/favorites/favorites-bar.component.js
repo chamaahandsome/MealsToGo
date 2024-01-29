@@ -7,7 +7,10 @@ import { Text } from "../typography/text.component";
 
 const FavoritesWrapper = styled.View`
   padding: 10px;
+  z-index: 999;
+  border-radius: 15px;
 `;
+
 export const FavoritesBar = ({ favorites, onNavigate }) => {
   if (!favorites.length) {
     return null;
