@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import styled from "styled-components/native";
 import { ActivityIndicator } from "react-native-paper";
-import { FlatList, TouchableOpacity } from "react-native";
+import { TouchableOpacity } from "react-native";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
 import { Spacer } from "../../../components/spacer/spacer.component";
 import { SafeArea } from "../../../utils/safe-area.component";
