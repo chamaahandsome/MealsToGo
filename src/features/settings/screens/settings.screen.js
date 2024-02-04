@@ -1,4 +1,5 @@
-import React, { useContext } from "react";
+import React, { useContext, useCallback, useState } from "react";
+import { TouchableOpacity } from "react-native";
 
 import styled from "styled-components/native";
 
@@ -21,10 +22,12 @@ export const SettingsScreen = ({ navigation }) => {
   return (
     <SafeArea>
       <AvatarContainer>
-        <Avatar.Icon size={180} icon="human" backgroundColor="#2182BD" />
-        <Spacer position="top" size="large">
-          <Text variant="label">{user.email}</Text>
-        </Spacer>
+        <TouchableOpacity onPress={() => navigation.navigate("Camera")}>
+          <Avatar.Icon size={180} icon="human" backgroundColor="#2182BD" />
+          <Spacer position="top" size="large">
+            <Text variant="label">{user.email}</Text>
+          </Spacer>
+        </TouchableOpacity>
       </AvatarContainer>
       <List.Section>
         <SettingsItem
