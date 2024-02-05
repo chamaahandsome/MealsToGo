@@ -19,7 +19,7 @@ const InnerSnap = styled.View`
   z-index: 999;
 `;
 
-export const CameraScreen = () => {
+export const CameraScreen = ({ navigation }) => {
   const [hasPermission, setHasPermission] = useState(null);
   const cameraRef = useRef();
   const { user } = useContext(AuthenticationContext);
@@ -28,6 +28,7 @@ export const CameraScreen = () => {
     if (cameraRef) {
       const photo = await cameraRef.current.takePictureAsync();
       AsyncStorage.setItem("${user.uid}-photo", photo.uri);
+      navigation.goBack();
     }
   };
 
