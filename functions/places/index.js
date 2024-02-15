@@ -9,5 +9,4 @@ module.exports.placesRequest = (request, response) => {
   }
 
   response.json(data);
-  //   response.send("Hello from Firebase!");
 };

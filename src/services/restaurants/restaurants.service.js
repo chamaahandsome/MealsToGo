@@ -1,8 +1,8 @@
 import camelize from "camelize";
 
-export const restaurantsRequest = (location = "37.7749295,-122.4194155") => {
+export const restaurantsRequest = (location) => {
   return fetch(
-    `http://localhost:5001/mealstogo-b2612/us-central1/placesNearby?location=${location}`
+    `http://127.0.0.1:5001/mealstogo-877b3/us-central1/placesNearby?location=${location}`
   ).then((res) => {
     return res.json();
   });
