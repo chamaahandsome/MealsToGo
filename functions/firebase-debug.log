@@ -1277,3 +1277,1304 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 [debug] [2024-02-11T10:56:56.945Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finishing up request with event=finish"}}
 [debug] [2024-02-11T10:56:56.945Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finishing up request with event=close"}}
 [debug] [2024-02-11T10:56:56.945Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-13T16:56:18.260Z] ----------------------------------------------------------------------
+[debug] [2024-02-13T16:56:18.263Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2024-02-13T16:56:18.263Z] CLI Version:   13.2.1
+[debug] [2024-02-13T16:56:18.264Z] Platform:      win32
+[debug] [2024-02-13T16:56:18.264Z] Node Version:  v20.10.0
+[debug] [2024-02-13T16:56:18.264Z] Time:          Tue Feb 13 2024 11:56:18 GMT-0500 (Eastern Standard Time)
+[debug] [2024-02-13T16:56:18.264Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-13T16:56:18.348Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-13T16:56:18.348Z] > authorizing via signed-in user (timboywa1@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2024-02-13T16:56:18.365Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-13T16:56:18.365Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-02-13T16:56:18.375Z] [hub] writing locator at C:\Users\User\AppData\Local\Temp\hub-mealstogo-877b3.json
+[debug] [2024-02-13T16:56:18.396Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-13T16:56:18.396Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-13T16:56:18.396Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2024-02-13T16:56:18.399Z] defaultcredentials: writing to file C:\Users\User\AppData\Roaming\firebase\timboywa1_gmail_com_application_default_credentials.json
+[debug] [2024-02-13T16:56:18.402Z] Setting GAC to C:\Users\User\AppData\Roaming\firebase\timboywa1_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\User\\AppData\\Roaming\\firebase\\timboywa1_gmail_com_application_default_credentials.json"}}
+[debug] [2024-02-13T16:56:18.404Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-877b3/adminSdkConfig [none]
+[debug] [2024-02-13T16:56:19.024Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-877b3/adminSdkConfig 200
+[debug] [2024-02-13T16:56:19.024Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-877b3/adminSdkConfig {"projectId":"mealstogo-877b3","storageBucket":"mealstogo-877b3.appspot.com"}
+[info] i  ui: downloading ui-v1.11.7.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.11.7.zip..."}}
+[debug] [2024-02-13T16:56:19.107Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip 
+[debug] [2024-02-13T16:56:19.356Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip 200
+[debug] [2024-02-13T16:56:19.356Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip [stream]
+[debug] [2024-02-13T16:56:19.641Z] Data is 3064105
+[debug] [2024-02-13T16:56:19.642Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-02-13T16:56:19.642Z] [unzip] Processing entry: client\
+[debug] [2024-02-13T16:56:19.642Z] [unzip] mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\
+[debug] [2024-02-13T16:56:19.645Z] [unzip] Entry: client/favicon.ico (compressed_size=2497 bytes, uncompressed_size=7406 bytes)
+[debug] [2024-02-13T16:56:19.646Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2024-02-13T16:56:19.646Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-13T16:56:19.647Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\favicon.ico
+[debug] [2024-02-13T16:56:19.661Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=7231 bytes, uncompressed_size=7367 bytes)
+[debug] [2024-02-13T16:56:19.661Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2024-02-13T16:56:19.662Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-13T16:56:19.662Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\apple-touch-icon.png
+[debug] [2024-02-13T16:56:19.666Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=16987 bytes, uncompressed_size=18186 bytes)
+[debug] [2024-02-13T16:56:19.666Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2024-02-13T16:56:19.667Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-13T16:56:19.667Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\android-chrome-512x512.png
+[debug] [2024-02-13T16:56:19.673Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-02-13T16:56:19.673Z] [unzip] Processing entry: client\assets\
+[debug] [2024-02-13T16:56:19.673Z] [unzip] mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\
+[debug] [2024-02-13T16:56:19.674Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-02-13T16:56:19.675Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2024-02-13T16:56:19.675Z] [unzip] mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions\
+[debug] [2024-02-13T16:56:19.676Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2024-02-13T16:56:19.676Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2024-02-13T16:56:19.676Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions
+[debug] [2024-02-13T16:56:19.677Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions\default-extension.png
+[debug] [2024-02-13T16:56:19.680Z] [unzip] Entry: client/assets/index.58ca09f7.css (compressed_size=37601 bytes, uncompressed_size=321252 bytes)
+[debug] [2024-02-13T16:56:19.680Z] [unzip] Processing entry: client\assets\index.58ca09f7.css
+[debug] [2024-02-13T16:56:19.680Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2024-02-13T16:56:19.681Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.58ca09f7.css
+[debug] [2024-02-13T16:56:19.690Z] [unzip] Entry: client/assets/index.c2583d42.js (compressed_size=526232 bytes, uncompressed_size=1860152 bytes)
+[debug] [2024-02-13T16:56:19.690Z] [unzip] Processing entry: client\assets\index.c2583d42.js
+[debug] [2024-02-13T16:56:19.690Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2024-02-13T16:56:19.691Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.c2583d42.js
+[debug] [2024-02-13T16:56:19.729Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-02-13T16:56:19.729Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2024-02-13T16:56:19.729Z] [unzip] mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\
+[debug] [2024-02-13T16:56:19.731Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2024-02-13T16:56:19.731Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2024-02-13T16:56:19.731Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-13T16:56:19.732Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2024-02-13T16:56:19.735Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2024-02-13T16:56:19.735Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2024-02-13T16:56:19.736Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-13T16:56:19.736Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2024-02-13T16:56:19.740Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2024-02-13T16:56:19.740Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2024-02-13T16:56:19.740Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-13T16:56:19.741Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2024-02-13T16:56:19.744Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2024-02-13T16:56:19.744Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2024-02-13T16:56:19.744Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-13T16:56:19.745Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2024-02-13T16:56:19.748Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2024-02-13T16:56:19.749Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2024-02-13T16:56:19.749Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-13T16:56:19.750Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2024-02-13T16:56:19.753Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2024-02-13T16:56:19.753Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2024-02-13T16:56:19.753Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-13T16:56:19.754Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2024-02-13T16:56:19.757Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2024-02-13T16:56:19.758Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2024-02-13T16:56:19.758Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-13T16:56:19.759Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2024-02-13T16:56:19.762Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2024-02-13T16:56:19.762Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2024-02-13T16:56:19.762Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-13T16:56:19.763Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_github.svg
+[debug] [2024-02-13T16:56:19.766Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2024-02-13T16:56:19.766Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2024-02-13T16:56:19.766Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-13T16:56:19.767Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2024-02-13T16:56:19.769Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2024-02-13T16:56:19.770Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2024-02-13T16:56:19.770Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-13T16:56:19.770Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_google.svg
+[debug] [2024-02-13T16:56:19.773Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2024-02-13T16:56:19.773Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2024-02-13T16:56:19.773Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-13T16:56:19.774Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_email.svg
+[debug] [2024-02-13T16:56:19.777Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2024-02-13T16:56:19.777Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2024-02-13T16:56:19.777Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-13T16:56:19.778Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2024-02-13T16:56:19.781Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2024-02-13T16:56:19.781Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2024-02-13T16:56:19.781Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-13T16:56:19.782Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2024-02-13T16:56:19.785Z] [unzip] Entry: client/assets/index.c2583d42.js.map (compressed_size=1778557 bytes, uncompressed_size=7961927 bytes)
+[debug] [2024-02-13T16:56:19.785Z] [unzip] Processing entry: client\assets\index.c2583d42.js.map
+[debug] [2024-02-13T16:56:19.785Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2024-02-13T16:56:19.786Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.c2583d42.js.map
+[debug] [2024-02-13T16:56:19.927Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-02-13T16:56:19.927Z] [unzip] Processing entry: client\assets\img\
+[debug] [2024-02-13T16:56:19.927Z] [unzip] mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\img\
+[debug] [2024-02-13T16:56:19.928Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2024-02-13T16:56:19.928Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2024-02-13T16:56:19.928Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\img
+[debug] [2024-02-13T16:56:19.929Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\assets\img\database.png
+[debug] [2024-02-13T16:56:19.933Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=838 bytes, uncompressed_size=1504 bytes)
+[debug] [2024-02-13T16:56:19.933Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2024-02-13T16:56:19.933Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-13T16:56:19.934Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\safari-pinned-tab.svg
+[debug] [2024-02-13T16:56:19.937Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=5406 bytes, uncompressed_size=5723 bytes)
+[debug] [2024-02-13T16:56:19.937Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2024-02-13T16:56:19.938Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-13T16:56:19.938Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\mstile-150x150.png
+[debug] [2024-02-13T16:56:19.941Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2024-02-13T16:56:19.942Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2024-02-13T16:56:19.942Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-13T16:56:19.943Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\browserconfig.xml
+[debug] [2024-02-13T16:56:19.945Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2024-02-13T16:56:19.945Z] [unzip] Processing entry: client\robots.txt
+[debug] [2024-02-13T16:56:19.946Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-13T16:56:19.946Z] [unzip] Writing file: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\robots.txt
+[debug] [2024-02-13T16:56:19.950Z] [unzip] Entry: client/index.html (compressed_size=1363 bytes, uncompressed_size=3064 bytes)
+[debug] [2024-02-13T16:56:19.950Z] [unzip] Processing entry: client\index.html
+[debug] [2024-02-13T16:56:19.950Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-13T16:56:19.951Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\index.html
+[debug] [2024-02-13T16:56:19.954Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=757 bytes, uncompressed_size=777 bytes)
+[debug] [2024-02-13T16:56:19.954Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2024-02-13T16:56:19.954Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-13T16:56:19.955Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\favicon-16x16.png
+[debug] [2024-02-13T16:56:19.958Z] [unzip] Entry: client/manifest.json (compressed_size=246 bytes, uncompressed_size=551 bytes)
+[debug] [2024-02-13T16:56:19.958Z] [unzip] Processing entry: client\manifest.json
+[debug] [2024-02-13T16:56:19.958Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-13T16:56:19.959Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\manifest.json
+[debug] [2024-02-13T16:56:19.962Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=1175 bytes, uncompressed_size=1175 bytes)
+[debug] [2024-02-13T16:56:19.962Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2024-02-13T16:56:19.962Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-13T16:56:19.963Z] [unzip] Writing file: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\favicon-32x32.png
+[debug] [2024-02-13T16:56:19.965Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=7602 bytes, uncompressed_size=7834 bytes)
+[debug] [2024-02-13T16:56:19.966Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2024-02-13T16:56:19.966Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-13T16:56:19.966Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\client\android-chrome-192x192.png
+[debug] [2024-02-13T16:56:19.969Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-02-13T16:56:19.969Z] [unzip] Processing entry: server\
+[debug] [2024-02-13T16:56:19.970Z] [unzip] mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\server\
+[debug] [2024-02-13T16:56:19.970Z] [unzip] Entry: server/server.js (compressed_size=343746 bytes, uncompressed_size=1346374 bytes)
+[debug] [2024-02-13T16:56:19.971Z] [unzip] Processing entry: server\server.js
+[debug] [2024-02-13T16:56:19.971Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\server
+[debug] [2024-02-13T16:56:19.972Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\server\server.js
+[debug] [2024-02-13T16:56:19.996Z] [unzip] Entry: server/server.js.map (compressed_size=289157 bytes, uncompressed_size=1325651 bytes)
+[debug] [2024-02-13T16:56:19.996Z] [unzip] Processing entry: server\server.js.map
+[debug] [2024-02-13T16:56:19.996Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\server
+[debug] [2024-02-13T16:56:19.997Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.11.7\server\server.js.map
+[debug] [2024-02-13T16:56:20.023Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-02-13T16:56:20.023Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-02-13T16:56:20.023Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\User\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\User\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-02-13T16:56:20.482Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-02-13T16:56:20.483Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\" for Cloud Functions..."}}
+[debug] [2024-02-13T16:56:20.597Z] Validating nodejs source
+[debug] [2024-02-13T16:56:23.761Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-13T16:56:23.763Z] Building nodejs source
+[debug] [2024-02-13T16:56:23.765Z] Failed to find version of module node: reached end of search path C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[debug] [2024-02-13T16:56:23.774Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-13T16:56:23.803Z] Found firebase-functions binary at 'C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8071
+
+[debug] [2024-02-13T16:56:24.392Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: geocode. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode."}}
+[info] +  functions[us-central1-geocode]: http function initialized (http://127.0.0.1:5001/mealstogo-877b3/us-central1/geocode). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/mealstogo-877b3/us-central1/geocode)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-02-13T17:17:21.900Z] File C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-13T17:17:22.913Z] Validating nodejs source
+[debug] [2024-02-13T17:17:26.085Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-13T17:17:26.085Z] Building nodejs source
+[debug] [2024-02-13T17:17:26.086Z] Failed to find version of module node: reached end of search path C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[debug] [2024-02-13T17:17:26.089Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-13T17:17:26.103Z] Found firebase-functions binary at 'C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8693
+
+[error] Error: Cannot find module './places'
+Require stack:
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\index.js
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\index.js:14:27)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\index.js',
+    'C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\runtime\\loader.js',
+    'C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\bin\\firebase-functions.js'
+  ]
+}
+
+[debug] [2024-02-13T17:17:26.860Z] Got response code 400; body Failed to generate manifest from function source: Error: Cannot find module './places'
+Require stack:
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\index.js
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-13T17:18:03.671Z] File C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\places\\index.js changed, reloading triggers"}}
+[debug] [2024-02-13T17:18:04.676Z] Validating nodejs source
+[debug] [2024-02-13T17:18:07.114Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-13T17:18:07.115Z] Building nodejs source
+[debug] [2024-02-13T17:18:07.115Z] Failed to find version of module node: reached end of search path C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[debug] [2024-02-13T17:18:07.117Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-13T17:18:07.124Z] Found firebase-functions binary at 'C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-02-13T17:18:07.130Z] File C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\places\\index.js changed, reloading triggers"}}
+[info] Serving at port 8159
+
+[error] Error: Cannot find module './mock'
+Require stack:
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\index.js
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\index.js
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\index.js:1:33)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\places\\index.js',
+    'C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\index.js',
+    'C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\runtime\\loader.js',
+    'C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\bin\\firebase-functions.js'
+  ]
+}
+
+[debug] [2024-02-13T17:18:08.099Z] Got response code 400; body Failed to generate manifest from function source: Error: Cannot find module './mock'
+Require stack:
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\index.js
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\index.js
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js
+[debug] [2024-02-13T17:18:08.133Z] Validating nodejs source
+[debug] [2024-02-13T17:18:10.825Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-13T17:18:10.826Z] Building nodejs source
+[debug] [2024-02-13T17:18:10.826Z] Failed to find version of module node: reached end of search path C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[debug] [2024-02-13T17:18:10.830Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-13T17:18:10.856Z] Found firebase-functions binary at 'C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8694
+
+[error] Error: Cannot find module './mock'
+Require stack:
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\index.js
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\index.js
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1144:15)
+    at Module._load (node:internal/modules/cjs/loader:985:27)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\index.js:1:33)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\places\\index.js',
+    'C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\index.js',
+    'C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\runtime\\loader.js',
+    'C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\bin\\firebase-functions.js'
+  ]
+}
+
+[debug] [2024-02-13T17:18:11.826Z] Got response code 400; body Failed to generate manifest from function source: Error: Cannot find module './mock'
+Require stack:
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\index.js
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\index.js
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\firebase-functions\lib\runtime\loader.js
+- C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-13T17:27:06.498Z] File C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\places\\index.js changed, reloading triggers"}}
+[debug] [2024-02-13T17:27:07.510Z] Validating nodejs source
+[debug] [2024-02-13T17:27:10.023Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-13T17:27:10.023Z] Building nodejs source
+[debug] [2024-02-13T17:27:10.023Z] Failed to find version of module node: reached end of search path C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[debug] [2024-02-13T17:27:10.028Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-13T17:27:10.037Z] Found firebase-functions binary at 'C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8310
+
+[debug] [2024-02-13T17:27:10.384Z] File C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\places\\index.js changed, reloading triggers"}}
+[error] C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\index.js:1
+import antwerp from "./antwerp.json";
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\index.js:1:33)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+
+[debug] [2024-02-13T17:27:10.845Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module
+[debug] [2024-02-13T17:27:11.390Z] Validating nodejs source
+[debug] [2024-02-13T17:27:14.056Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-13T17:27:14.057Z] Building nodejs source
+[debug] [2024-02-13T17:27:14.057Z] Failed to find version of module node: reached end of search path C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[debug] [2024-02-13T17:27:14.060Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-13T17:27:14.068Z] Found firebase-functions binary at 'C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8679
+
+[error] C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\index.js:1
+import antwerp from "./antwerp.json";
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\index.js:1:33)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+
+[debug] [2024-02-13T17:27:14.895Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-13T17:28:59.614Z] File C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\places\\mock\\index.js changed, reloading triggers"}}
+[debug] [2024-02-13T17:29:00.620Z] Validating nodejs source
+[debug] [2024-02-13T17:29:03.388Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-13T17:29:03.389Z] Building nodejs source
+[debug] [2024-02-13T17:29:03.390Z] Failed to find version of module node: reached end of search path C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[debug] [2024-02-13T17:29:03.392Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-13T17:29:03.403Z] Found firebase-functions binary at 'C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8959
+
+[error] SyntaxError: C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\antwerp.json: Expected double-quoted property name in JSON at position 1830
+    at parse (<anonymous>)
+    at Module._extensions..json (node:internal/modules/cjs/loader:1453:39)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\index.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+
+[debug] [2024-02-13T17:29:04.475Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\antwerp.json: Expected double-quoted property name in JSON at position 1830
+[debug] [2024-02-13T17:29:05.917Z] File C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\places\\mock\\index.js changed, reloading triggers"}}
+[debug] [2024-02-13T17:29:06.929Z] Validating nodejs source
+[debug] [2024-02-13T17:29:09.220Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-13T17:29:09.220Z] Building nodejs source
+[debug] [2024-02-13T17:29:09.220Z] Failed to find version of module node: reached end of search path C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[debug] [2024-02-13T17:29:09.224Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-13T17:29:09.228Z] Found firebase-functions binary at 'C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[info] Serving at port 8234
+
+[error] SyntaxError: C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\antwerp.json: Expected double-quoted property name in JSON at position 1830
+    at parse (<anonymous>)
+    at Module._extensions..json (node:internal/modules/cjs/loader:1453:39)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\index.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+
+[debug] [2024-02-13T17:29:10.109Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\antwerp.json: Expected double-quoted property name in JSON at position 1830
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-13T17:29:26.141Z] File C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\places\\index.js changed, reloading triggers"}}
+[debug] [2024-02-13T17:29:27.148Z] Validating nodejs source
+[debug] [2024-02-13T17:29:29.651Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-13T17:29:29.651Z] Building nodejs source
+[debug] [2024-02-13T17:29:29.651Z] Failed to find version of module node: reached end of search path C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[debug] [2024-02-13T17:29:29.653Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-13T17:29:29.665Z] Found firebase-functions binary at 'C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8721
+
+[error] SyntaxError: C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\antwerp.json: Expected double-quoted property name in JSON at position 1830
+    at parse (<anonymous>)
+    at Module._extensions..json (node:internal/modules/cjs/loader:1453:39)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\index.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+
+[debug] [2024-02-13T17:29:30.722Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\antwerp.json: Expected double-quoted property name in JSON at position 1830
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-13T17:29:44.958Z] File C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-02-13T17:29:45.969Z] Validating nodejs source
+[debug] [2024-02-13T17:29:48.227Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-13T17:29:48.227Z] Building nodejs source
+[debug] [2024-02-13T17:29:48.227Z] Failed to find version of module node: reached end of search path C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[debug] [2024-02-13T17:29:48.232Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-13T17:29:48.242Z] Found firebase-functions binary at 'C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8039
+
+[error] SyntaxError: C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\antwerp.json: Expected double-quoted property name in JSON at position 1830
+    at parse (<anonymous>)
+    at Module._extensions..json (node:internal/modules/cjs/loader:1453:39)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\index.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+
+[debug] [2024-02-13T17:29:48.897Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\antwerp.json: Expected double-quoted property name in JSON at position 1830
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-13T17:37:37.426Z] File C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\places\\index.js changed, reloading triggers"}}
+[debug] [2024-02-13T17:37:38.443Z] Validating nodejs source
+[debug] [2024-02-13T17:37:40.997Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-13T17:37:40.997Z] Building nodejs source
+[debug] [2024-02-13T17:37:40.997Z] Failed to find version of module node: reached end of search path C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[debug] [2024-02-13T17:37:40.999Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-13T17:37:41.007Z] Found firebase-functions binary at 'C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8056
+
+[debug] [2024-02-13T17:37:41.829Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[info] +  functions[us-central1-placesNearby]: http function initialized (http://127.0.0.1:5001/mealstogo-877b3/us-central1/placesNearby). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/mealstogo-877b3/us-central1/placesNearby)."}}
+[debug] [2024-02-13T17:38:32.556Z] [work-queue] {"queuedWork":["/mealstogo-877b3/us-central1/placesNearby-2024-02-13T17:38:32.556Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-13T17:38:32.557Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/mealstogo-877b3/us-central1/placesNearby-2024-02-13T17:38:32.556Z"],"workRunningCount":1}
+[debug] [2024-02-13T17:38:32.558Z] Accepted request GET /mealstogo-877b3/us-central1/placesNearby --> us-central1-placesNearby
+[debug] [2024-02-13T17:38:32.559Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-02-13T17:38:32.560Z] [functions] Got req.url=/mealstogo-877b3/us-central1/placesNearby, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-877b3/us-central1/placesNearby, mapping to path=/"}}
+[debug] [2024-02-13T17:38:32.574Z] [worker-pool] addWorker(us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-placesNearby)"}}
+[debug] [2024-02-13T17:38:32.575Z] [worker-pool] Adding worker with key us-central1-placesNearby, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-placesNearby, total=1"}}
+[debug] [2024-02-13T17:38:34.644Z] [runtime-status] [16572] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [16572] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-13T17:38:34.645Z] [runtime-status] [16572] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [16572] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-13T17:38:34.646Z] [runtime-status] [16572] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [16572] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-02-13T17:38:34.646Z] [runtime-status] [16572] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [16572] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-13T17:38:34.951Z] [runtime-status] [16572] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [16572] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-02-13T17:38:34.952Z] [runtime-status] [16572] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [16572] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-02-13T17:38:34.952Z] [runtime-status] [16572] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [16572] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-13T17:38:34.953Z] [runtime-status] [16572] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [16572] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-13T17:38:34.955Z] [runtime-status] [16572] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [16572] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-13T17:38:34.956Z] [runtime-status] [16572] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [16572] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-02-13T17:38:34.972Z] [runtime-status] [16572] Functions runtime initialized. {"cwd":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions","node_version":"20.10.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [16572] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\",\"node_version\":\"20.10.0\"}"}}
+[debug] [2024-02-13T17:38:34.973Z] [runtime-status] [16572] Listening to port: \\?\pipe\fire_emu_029c6d8febe16eb8 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [16572] Listening to port: \\\\?\\pipe\\fire_emu_029c6d8febe16eb8"}}
+[debug] [2024-02-13T17:38:35.107Z] [worker-us-central1-placesNearby-48e76766-8652-4ce5-90a3-c1002e80bd61]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-48e76766-8652-4ce5-90a3-c1002e80bd61]: IDLE"}}
+[debug] [2024-02-13T17:38:35.108Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[info] i  functions: Beginning execution of "us-central1-placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"us-central1-placesNearby\""}}
+[debug] [2024-02-13T17:38:35.112Z] [worker-us-central1-placesNearby-48e76766-8652-4ce5-90a3-c1002e80bd61]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-48e76766-8652-4ce5-90a3-c1002e80bd61]: BUSY"}}
+[debug] [2024-02-13T17:38:35.124Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-placesNearby" in 13.4456ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"us-central1-placesNearby\" in 13.4456ms"}}
+[debug] [2024-02-13T17:38:35.127Z] [worker-us-central1-placesNearby-48e76766-8652-4ce5-90a3-c1002e80bd61]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-48e76766-8652-4ce5-90a3-c1002e80bd61]: IDLE"}}
+[debug] [2024-02-13T17:38:35.129Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-02-13T17:38:35.130Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-02-13T17:38:35.130Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-13T17:38:35.194Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2024-02-13T17:38:57.054Z] [work-queue] {"queuedWork":["/mealstogo-877b3/us-central1/geocode-2024-02-13T17:38:57.054Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-13T17:38:57.055Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/mealstogo-877b3/us-central1/geocode-2024-02-13T17:38:57.054Z"],"workRunningCount":1}
+[debug] [2024-02-13T17:38:57.055Z] Accepted request GET /mealstogo-877b3/us-central1/geocode --> us-central1-geocode
+[debug] [2024-02-13T17:38:57.055Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-02-13T17:38:57.055Z] [functions] Got req.url=/mealstogo-877b3/us-central1/geocode, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-877b3/us-central1/geocode, mapping to path=/"}}
+[debug] [2024-02-13T17:38:57.062Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2024-02-13T17:38:57.063Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2024-02-13T17:38:58.721Z] [runtime-status] [18312] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [18312] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-13T17:38:58.723Z] [runtime-status] [18312] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [18312] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-13T17:38:58.723Z] [runtime-status] [18312] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [18312] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-02-13T17:38:58.724Z] [runtime-status] [18312] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [18312] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-13T17:38:59.151Z] [runtime-status] [18312] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [18312] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-02-13T17:38:59.151Z] [runtime-status] [18312] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [18312] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-02-13T17:38:59.152Z] [runtime-status] [18312] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [18312] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-13T17:38:59.153Z] [runtime-status] [18312] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [18312] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-13T17:38:59.156Z] [runtime-status] [18312] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [18312] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-13T17:38:59.156Z] [runtime-status] [18312] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [18312] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-02-13T17:38:59.174Z] [runtime-status] [18312] Functions runtime initialized. {"cwd":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions","node_version":"20.10.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [18312] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\",\"node_version\":\"20.10.0\"}"}}
+[debug] [2024-02-13T17:38:59.175Z] [runtime-status] [18312] Listening to port: \\?\pipe\fire_emu_599c47ca023f3544 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [18312] Listening to port: \\\\?\\pipe\\fire_emu_599c47ca023f3544"}}
+[debug] [2024-02-13T17:38:59.288Z] [worker-us-central1-geocode-ab7011f4-26db-4b96-8470-65f82e15d2fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[worker-us-central1-geocode-ab7011f4-26db-4b96-8470-65f82e15d2fa]: IDLE"}}
+[debug] [2024-02-13T17:38:59.289Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[info] i  functions: Beginning execution of "us-central1-geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"us-central1-geocode\""}}
+[debug] [2024-02-13T17:38:59.292Z] [worker-us-central1-geocode-ab7011f4-26db-4b96-8470-65f82e15d2fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[worker-us-central1-geocode-ab7011f4-26db-4b96-8470-65f82e15d2fa]: BUSY"}}
+[warn] !  functions: TypeError: Cannot read properties of undefined (reading 'toLowerCase')
+    at module.exports.geocodeRequest (C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\geocode\index.js:6:43)
+    at C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\index.js:17:3
+    at cloudFunction (C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\firebase-functions\lib\v1\providers\https.js:51:16)
+    at C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:532:16
+    at runFunction (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:506:15)
+    at runHTTPS (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:531:11)
+    at C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:694:27
+    at Layer.handle [as handle_request] (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\route.js:140:7) {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"TypeError: Cannot read properties of undefined (reading 'toLowerCase')\n    at module.exports.geocodeRequest (C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\geocode\\index.js:6:43)\n    at C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\index.js:17:3\n    at cloudFunction (C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\providers\\https.js:51:16)\n    at C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:532:16\n    at runFunction (C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:506:15)\n    at runHTTPS (C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:531:11)\n    at C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:694:27\n    at Layer.handle [as handle_request] (C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at next (C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\route.js:140:7)"}}
+[warn] !  Your function was killed because it raised an unhandled error. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Your function was killed because it raised an unhandled error."}}
+[debug] [2024-02-13T17:38:59.311Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-geocode" in 19.7684ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"us-central1-geocode\" in 19.7684ms"}}
+[debug] [2024-02-13T17:38:59.313Z] [worker-us-central1-geocode-ab7011f4-26db-4b96-8470-65f82e15d2fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[worker-us-central1-geocode-ab7011f4-26db-4b96-8470-65f82e15d2fa]: IDLE"}}
+[debug] [2024-02-13T17:38:59.314Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-02-13T17:38:59.314Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-02-13T17:38:59.314Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-13T17:38:59.352Z] [worker-us-central1-geocode-ab7011f4-26db-4b96-8470-65f82e15d2fa]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[worker-us-central1-geocode-ab7011f4-26db-4b96-8470-65f82e15d2fa]: exited"}}
+[debug] [2024-02-13T17:38:59.353Z] [worker-us-central1-geocode-ab7011f4-26db-4b96-8470-65f82e15d2fa]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[worker-us-central1-geocode-ab7011f4-26db-4b96-8470-65f82e15d2fa]: FINISHED"}}
+[debug] [2024-02-13T17:39:22.032Z] File C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\places\\index.js changed, reloading triggers"}}
+[debug] [2024-02-13T17:39:23.047Z] Validating nodejs source
+[debug] [2024-02-13T17:39:25.366Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-13T17:39:25.366Z] Building nodejs source
+[debug] [2024-02-13T17:39:25.367Z] Failed to find version of module node: reached end of search path C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[debug] [2024-02-13T17:39:25.368Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-13T17:39:25.376Z] Found firebase-functions binary at 'C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8185
+
+[error] SyntaxError: C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\antwerp.json: Expected double-quoted property name in JSON at position 1830
+    at parse (<anonymous>)
+    at Module._extensions..json (node:internal/modules/cjs/loader:1453:39)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\index.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+
+[debug] [2024-02-13T17:39:26.230Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\antwerp.json: Expected double-quoted property name in JSON at position 1830
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-13T17:41:35.722Z] File C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\antwerp.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\places\\mock\\antwerp.js changed, reloading triggers"}}
+[debug] [2024-02-13T17:41:36.726Z] Validating nodejs source
+[debug] [2024-02-13T17:41:39.048Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-13T17:41:39.049Z] Building nodejs source
+[debug] [2024-02-13T17:41:39.049Z] Failed to find version of module node: reached end of search path C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[debug] [2024-02-13T17:41:39.051Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-13T17:41:39.062Z] Found firebase-functions binary at 'C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8125
+
+[error] C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\chicago.js:2
+    "html_attributions": [],
+                       ^
+
+SyntaxError: Unexpected token ':'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\index.js:2:17)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+
+[debug] [2024-02-13T17:41:40.067Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token ':'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2024-02-13T17:42:04.700Z] File C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\chicago.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\places\\mock\\chicago.js changed, reloading triggers"}}
+[debug] [2024-02-13T17:42:05.702Z] Validating nodejs source
+[debug] [2024-02-13T17:42:08.709Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-13T17:42:08.710Z] Building nodejs source
+[debug] [2024-02-13T17:42:08.710Z] Failed to find version of module node: reached end of search path C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[debug] [2024-02-13T17:42:08.712Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-13T17:42:08.722Z] Found firebase-functions binary at 'C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8952
+
+[error] C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\toronto.js:2
+    "html_attributions": [],
+                       ^
+
+SyntaxError: Unexpected token ':'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+
+[debug] [2024-02-13T17:42:09.948Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token ':'
+[debug] [2024-02-13T17:42:13.154Z] File C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\san_francisco.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\places\\mock\\san_francisco.js changed, reloading triggers"}}
+[debug] [2024-02-13T17:42:14.160Z] Validating nodejs source
+[debug] [2024-02-13T17:42:17.002Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-13T17:42:17.003Z] Building nodejs source
+[debug] [2024-02-13T17:42:17.003Z] Failed to find version of module node: reached end of search path C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[debug] [2024-02-13T17:42:17.005Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-13T17:42:17.017Z] Found firebase-functions binary at 'C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[info] Serving at port 8419
+
+[error] C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\toronto.js:2
+    "html_attributions": [],
+                       ^
+
+SyntaxError: Unexpected token ':'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\index.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+
+[debug] [2024-02-13T17:42:18.543Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Unexpected token ':'
+[debug] [2024-02-13T17:42:18.648Z] File C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\places\mock\toronto.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\places\\mock\\toronto.js changed, reloading triggers"}}
+[debug] [2024-02-13T17:42:19.660Z] Validating nodejs source
+[debug] [2024-02-13T17:42:22.554Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-13T17:42:22.555Z] Building nodejs source
+[debug] [2024-02-13T17:42:22.555Z] Failed to find version of module node: reached end of search path C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[debug] [2024-02-13T17:42:22.557Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-13T17:42:22.568Z] Found firebase-functions binary at 'C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8590
+
+[debug] [2024-02-13T17:42:23.492Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2024-02-13T17:42:28.611Z] [worker-pool] Shutting down IDLE worker (us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-placesNearby)"}}
+[debug] [2024-02-13T17:42:28.611Z] [worker-us-central1-placesNearby-48e76766-8652-4ce5-90a3-c1002e80bd61]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-48e76766-8652-4ce5-90a3-c1002e80bd61]: FINISHING"}}
+[debug] [2024-02-13T17:42:28.623Z] [worker-us-central1-placesNearby-48e76766-8652-4ce5-90a3-c1002e80bd61]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-48e76766-8652-4ce5-90a3-c1002e80bd61]: exited"}}
+[debug] [2024-02-13T17:42:28.623Z] [worker-us-central1-placesNearby-48e76766-8652-4ce5-90a3-c1002e80bd61]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-48e76766-8652-4ce5-90a3-c1002e80bd61]: FINISHED"}}
+[debug] [2024-02-13T17:43:14.341Z] [work-queue] {"queuedWork":["/mealstogo-877b3/us-central1/geocode-2024-02-13T17:43:14.341Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-13T17:43:14.342Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/mealstogo-877b3/us-central1/geocode-2024-02-13T17:43:14.341Z"],"workRunningCount":1}
+[debug] [2024-02-13T17:43:14.342Z] Accepted request GET /mealstogo-877b3/us-central1/geocode --> us-central1-geocode
+[debug] [2024-02-13T17:43:14.342Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-02-13T17:43:14.343Z] [functions] Got req.url=/mealstogo-877b3/us-central1/geocode, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-877b3/us-central1/geocode, mapping to path=/"}}
+[debug] [2024-02-13T17:43:14.343Z] [worker-pool] Cleaned up workers for us-central1-placesNearby: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-placesNearby: 1 --> 0"}}
+[debug] [2024-02-13T17:43:14.343Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2024-02-13T17:43:14.355Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2024-02-13T17:43:14.355Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2024-02-13T17:43:16.707Z] [runtime-status] [20056] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [20056] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-13T17:43:16.711Z] [runtime-status] [20056] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [20056] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-13T17:43:16.712Z] [runtime-status] [20056] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [20056] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-02-13T17:43:16.714Z] [runtime-status] [20056] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [20056] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-13T17:43:17.139Z] [runtime-status] [20056] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [20056] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-02-13T17:43:17.139Z] [runtime-status] [20056] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [20056] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-02-13T17:43:17.139Z] [runtime-status] [20056] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [20056] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-13T17:43:17.140Z] [runtime-status] [20056] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [20056] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-13T17:43:17.143Z] [runtime-status] [20056] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [20056] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-13T17:43:17.143Z] [runtime-status] [20056] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [20056] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-02-13T17:43:17.180Z] [runtime-status] [20056] Functions runtime initialized. {"cwd":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions","node_version":"20.10.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [20056] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\",\"node_version\":\"20.10.0\"}"}}
+[debug] [2024-02-13T17:43:17.180Z] [runtime-status] [20056] Listening to port: \\?\pipe\fire_emu_352e27ebc3a46c26 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [20056] Listening to port: \\\\?\\pipe\\fire_emu_352e27ebc3a46c26"}}
+[debug] [2024-02-13T17:43:17.259Z] [worker-us-central1-geocode-090f166d-1301-41e1-b5fb-091b3b057c1a]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[worker-us-central1-geocode-090f166d-1301-41e1-b5fb-091b3b057c1a]: IDLE"}}
+[debug] [2024-02-13T17:43:17.259Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[info] i  functions: Beginning execution of "us-central1-geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"us-central1-geocode\""}}
+[debug] [2024-02-13T17:43:17.260Z] [worker-us-central1-geocode-090f166d-1301-41e1-b5fb-091b3b057c1a]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[worker-us-central1-geocode-090f166d-1301-41e1-b5fb-091b3b057c1a]: BUSY"}}
+[warn] !  functions: TypeError: Cannot read properties of undefined (reading 'toLowerCase')
+    at module.exports.geocodeRequest (C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\geocode\index.js:6:43)
+    at C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\index.js:17:3
+    at cloudFunction (C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\firebase-functions\lib\v1\providers\https.js:51:16)
+    at C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:532:16
+    at runFunction (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:506:15)
+    at runHTTPS (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:531:11)
+    at C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:694:27
+    at Layer.handle [as handle_request] (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\route.js:140:7) {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"TypeError: Cannot read properties of undefined (reading 'toLowerCase')\n    at module.exports.geocodeRequest (C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\geocode\\index.js:6:43)\n    at C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\index.js:17:3\n    at cloudFunction (C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\providers\\https.js:51:16)\n    at C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:532:16\n    at runFunction (C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:506:15)\n    at runHTTPS (C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:531:11)\n    at C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:694:27\n    at Layer.handle [as handle_request] (C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at next (C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\route.js:140:7)"}}
+[warn] !  Your function was killed because it raised an unhandled error. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Your function was killed because it raised an unhandled error."}}
+[debug] [2024-02-13T17:43:17.274Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-geocode" in 13.7972ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"us-central1-geocode\" in 13.7972ms"}}
+[debug] [2024-02-13T17:43:17.276Z] [worker-us-central1-geocode-090f166d-1301-41e1-b5fb-091b3b057c1a]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[worker-us-central1-geocode-090f166d-1301-41e1-b5fb-091b3b057c1a]: IDLE"}}
+[debug] [2024-02-13T17:43:17.276Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-02-13T17:43:17.276Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-02-13T17:43:17.277Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-13T17:43:17.305Z] [worker-us-central1-geocode-090f166d-1301-41e1-b5fb-091b3b057c1a]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[worker-us-central1-geocode-090f166d-1301-41e1-b5fb-091b3b057c1a]: exited"}}
+[debug] [2024-02-13T17:43:17.306Z] [worker-us-central1-geocode-090f166d-1301-41e1-b5fb-091b3b057c1a]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[worker-us-central1-geocode-090f166d-1301-41e1-b5fb-091b3b057c1a]: FINISHED"}}
+[debug] [2024-02-13T17:43:20.205Z] [work-queue] {"queuedWork":["/mealstogo-877b3/us-central1/placesNearby-2024-02-13T17:43:20.205Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-13T17:43:20.205Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/mealstogo-877b3/us-central1/placesNearby-2024-02-13T17:43:20.205Z"],"workRunningCount":1}
+[debug] [2024-02-13T17:43:20.205Z] Accepted request GET /mealstogo-877b3/us-central1/placesNearby --> us-central1-placesNearby
+[debug] [2024-02-13T17:43:20.206Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-02-13T17:43:20.206Z] [functions] Got req.url=/mealstogo-877b3/us-central1/placesNearby, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-877b3/us-central1/placesNearby, mapping to path=/"}}
+[debug] [2024-02-13T17:43:20.207Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2024-02-13T17:43:20.219Z] [worker-pool] addWorker(us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-placesNearby)"}}
+[debug] [2024-02-13T17:43:20.219Z] [worker-pool] Adding worker with key us-central1-placesNearby, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-placesNearby, total=1"}}
+[debug] [2024-02-13T17:43:22.423Z] [runtime-status] [18312] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [18312] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-13T17:43:22.424Z] [runtime-status] [18312] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [18312] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-13T17:43:22.425Z] [runtime-status] [18312] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [18312] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-02-13T17:43:22.425Z] [runtime-status] [18312] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [18312] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-13T17:43:23.101Z] [runtime-status] [18312] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [18312] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-02-13T17:43:23.102Z] [runtime-status] [18312] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [18312] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-02-13T17:43:23.103Z] [runtime-status] [18312] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [18312] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-13T17:43:23.104Z] [runtime-status] [18312] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [18312] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-13T17:43:23.107Z] [runtime-status] [18312] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [18312] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-13T17:43:23.107Z] [runtime-status] [18312] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [18312] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-02-13T17:43:23.178Z] [runtime-status] [18312] Functions runtime initialized. {"cwd":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions","node_version":"20.10.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [18312] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\",\"node_version\":\"20.10.0\"}"}}
+[debug] [2024-02-13T17:43:23.181Z] [runtime-status] [18312] Listening to port: \\?\pipe\fire_emu_d825ff2edcd13eb7 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [18312] Listening to port: \\\\?\\pipe\\fire_emu_d825ff2edcd13eb7"}}
+[debug] [2024-02-13T17:43:23.298Z] [worker-us-central1-placesNearby-732d2062-48c7-4976-b0c4-c0616e075e65]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-732d2062-48c7-4976-b0c4-c0616e075e65]: IDLE"}}
+[debug] [2024-02-13T17:43:23.299Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[info] i  functions: Beginning execution of "us-central1-placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"us-central1-placesNearby\""}}
+[debug] [2024-02-13T17:43:23.301Z] [worker-us-central1-placesNearby-732d2062-48c7-4976-b0c4-c0616e075e65]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-732d2062-48c7-4976-b0c4-c0616e075e65]: BUSY"}}
+[debug] [2024-02-13T17:43:23.316Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-placesNearby" in 16.1292ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"us-central1-placesNearby\" in 16.1292ms"}}
+[debug] [2024-02-13T17:43:23.319Z] [worker-us-central1-placesNearby-732d2062-48c7-4976-b0c4-c0616e075e65]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-732d2062-48c7-4976-b0c4-c0616e075e65]: IDLE"}}
+[debug] [2024-02-13T17:43:23.319Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-02-13T17:43:23.319Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-02-13T17:43:23.320Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-13T17:44:47.532Z] [work-queue] {"queuedWork":["/mealstogo-877b3/us-central1/placesNearby-2024-02-13T17:44:47.532Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-13T17:44:47.533Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/mealstogo-877b3/us-central1/placesNearby-2024-02-13T17:44:47.532Z"],"workRunningCount":1}
+[debug] [2024-02-13T17:44:47.533Z] Accepted request GET /mealstogo-877b3/us-central1/placesNearby?location=location --> us-central1-placesNearby
+[debug] [2024-02-13T17:44:47.533Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-02-13T17:44:47.533Z] [functions] Got req.url=/mealstogo-877b3/us-central1/placesNearby?location=location, mapping to path=/?location=location {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-877b3/us-central1/placesNearby?location=location, mapping to path=/?location=location"}}
+[debug] [2024-02-13T17:44:47.533Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[info] i  functions: Beginning execution of "us-central1-placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"us-central1-placesNearby\""}}
+[debug] [2024-02-13T17:44:47.534Z] [worker-us-central1-placesNearby-732d2062-48c7-4976-b0c4-c0616e075e65]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-732d2062-48c7-4976-b0c4-c0616e075e65]: BUSY"}}
+[debug] [2024-02-13T17:44:47.539Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-placesNearby" in 4.8443ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"us-central1-placesNearby\" in 4.8443ms"}}
+[debug] [2024-02-13T17:44:47.540Z] [worker-us-central1-placesNearby-732d2062-48c7-4976-b0c4-c0616e075e65]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-732d2062-48c7-4976-b0c4-c0616e075e65]: IDLE"}}
+[debug] [2024-02-13T17:44:47.540Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-02-13T17:44:47.540Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-02-13T17:44:47.540Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-13T17:45:22.017Z] [work-queue] {"queuedWork":["/mealstogo-877b3/us-central1/placesNearby-2024-02-13T17:45:22.017Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-13T17:45:22.017Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/mealstogo-877b3/us-central1/placesNearby-2024-02-13T17:45:22.017Z"],"workRunningCount":1}
+[debug] [2024-02-13T17:45:22.017Z] Accepted request GET /mealstogo-877b3/us-central1/placesNearby?location=somelocation --> us-central1-placesNearby
+[debug] [2024-02-13T17:45:22.018Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-02-13T17:45:22.018Z] [functions] Got req.url=/mealstogo-877b3/us-central1/placesNearby?location=somelocation, mapping to path=/?location=somelocation {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-877b3/us-central1/placesNearby?location=somelocation, mapping to path=/?location=somelocation"}}
+[debug] [2024-02-13T17:45:22.018Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[info] i  functions: Beginning execution of "us-central1-placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"us-central1-placesNearby\""}}
+[debug] [2024-02-13T17:45:22.019Z] [worker-us-central1-placesNearby-732d2062-48c7-4976-b0c4-c0616e075e65]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-732d2062-48c7-4976-b0c4-c0616e075e65]: BUSY"}}
+[debug] [2024-02-13T17:45:22.023Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-placesNearby" in 4.4239ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"us-central1-placesNearby\" in 4.4239ms"}}
+[debug] [2024-02-13T17:45:22.025Z] [worker-us-central1-placesNearby-732d2062-48c7-4976-b0c4-c0616e075e65]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-732d2062-48c7-4976-b0c4-c0616e075e65]: IDLE"}}
+[debug] [2024-02-13T17:45:22.025Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-02-13T17:45:22.026Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-02-13T17:45:22.026Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-13T17:46:21.649Z] [work-queue] {"queuedWork":["/mealstogo-877b3/us-central1/placesNearby-2024-02-13T17:46:21.649Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-13T17:46:21.649Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/mealstogo-877b3/us-central1/placesNearby-2024-02-13T17:46:21.649Z"],"workRunningCount":1}
+[debug] [2024-02-13T17:46:21.649Z] Accepted request GET /mealstogo-877b3/us-central1/placesNearby?location=37.7749295,-122.4194155 --> us-central1-placesNearby
+[debug] [2024-02-13T17:46:21.649Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-02-13T17:46:21.650Z] [functions] Got req.url=/mealstogo-877b3/us-central1/placesNearby?location=37.7749295,-122.4194155, mapping to path=/?location=37.7749295,-122.4194155 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-877b3/us-central1/placesNearby?location=37.7749295,-122.4194155, mapping to path=/?location=37.7749295,-122.4194155"}}
+[debug] [2024-02-13T17:46:21.650Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[info] i  functions: Beginning execution of "us-central1-placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"us-central1-placesNearby\""}}
+[debug] [2024-02-13T17:46:21.651Z] [worker-us-central1-placesNearby-732d2062-48c7-4976-b0c4-c0616e075e65]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-732d2062-48c7-4976-b0c4-c0616e075e65]: BUSY"}}
+[debug] [2024-02-13T17:46:21.655Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-placesNearby" in 4.1792ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"us-central1-placesNearby\" in 4.1792ms"}}
+[debug] [2024-02-13T17:46:21.656Z] [worker-us-central1-placesNearby-732d2062-48c7-4976-b0c4-c0616e075e65]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[worker-us-central1-placesNearby-732d2062-48c7-4976-b0c4-c0616e075e65]: IDLE"}}
+[debug] [2024-02-13T17:46:21.656Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-02-13T17:46:21.657Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-02-13T17:46:21.657Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-15T18:18:02.138Z] ----------------------------------------------------------------------
+[debug] [2024-02-15T18:18:02.141Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2024-02-15T18:18:02.141Z] CLI Version:   13.2.1
+[debug] [2024-02-15T18:18:02.141Z] Platform:      win32
+[debug] [2024-02-15T18:18:02.142Z] Node Version:  v20.10.0
+[debug] [2024-02-15T18:18:02.142Z] Time:          Thu Feb 15 2024 13:18:02 GMT-0500 (Eastern Standard Time)
+[debug] [2024-02-15T18:18:02.142Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-15T18:18:02.145Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-02-15T18:18:02.317Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-15T18:18:02.317Z] > authorizing via signed-in user (timboywa1@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2024-02-15T18:18:02.330Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-15T18:18:02.330Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project mealstogo-877b3. This may result in unexpected behavior. 
+[debug] [2024-02-15T18:18:02.343Z] [hub] writing locator at C:\Users\User\AppData\Local\Temp\hub-mealstogo-877b3.json
+[debug] [2024-02-15T18:18:02.369Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-15T18:18:02.369Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-15T18:18:02.369Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2024-02-15T18:18:02.372Z] defaultcredentials: writing to file C:\Users\User\AppData\Roaming\firebase\timboywa1_gmail_com_application_default_credentials.json
+[debug] [2024-02-15T18:18:02.374Z] Setting GAC to C:\Users\User\AppData\Roaming\firebase\timboywa1_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\User\\AppData\\Roaming\\firebase\\timboywa1_gmail_com_application_default_credentials.json"}}
+[debug] [2024-02-15T18:18:02.375Z] > refreshing access token with scopes: []
+[debug] [2024-02-15T18:18:02.376Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-02-15T18:18:02.376Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-15T18:18:02.443Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-02-15T18:18:02.443Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-02-15T18:18:02.668Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-02-15T18:18:02.668Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-15T18:18:02.694Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-877b3/adminSdkConfig [none]
+[debug] [2024-02-15T18:18:03.238Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-877b3/adminSdkConfig 200
+[debug] [2024-02-15T18:18:03.238Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-877b3/adminSdkConfig {"projectId":"mealstogo-877b3","storageBucket":"mealstogo-877b3.appspot.com"}
+[debug] [2024-02-15T18:18:03.288Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-02-15T18:18:03.288Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-02-15T18:18:03.289Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\User\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\User\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-02-15T18:18:03.508Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-02-15T18:18:03.508Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\" for Cloud Functions..."}}
+[debug] [2024-02-15T18:18:03.578Z] Validating nodejs source
+[debug] [2024-02-15T18:18:05.680Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-15T18:18:05.680Z] Building nodejs source
+[debug] [2024-02-15T18:18:05.680Z] Failed to find version of module node: reached end of search path C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[debug] [2024-02-15T18:18:05.684Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-15T18:18:05.691Z] Found firebase-functions binary at 'C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8667
+
+[debug] [2024-02-15T18:18:07.450Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[info] +  functions[us-central1-geocode]: http function initialized (http://127.0.0.1:5001/mealstogo-877b3/us-central1/geocode). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/mealstogo-877b3/us-central1/geocode)."}}
+[info] +  functions[us-central1-placesNearby]: http function initialized (http://127.0.0.1:5001/mealstogo-877b3/us-central1/placesNearby). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/mealstogo-877b3/us-central1/placesNearby)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-02-15T18:19:57.416Z] [work-queue] {"queuedWork":["/mealstogo-877b3/us-central1/geocode-2024-02-15T18:19:57.415Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-15T18:19:57.416Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/mealstogo-877b3/us-central1/geocode-2024-02-15T18:19:57.415Z"],"workRunningCount":1}
+[debug] [2024-02-15T18:19:57.417Z] Accepted request GET /mealstogo-877b3/us-central1/geocode --> us-central1-geocode
+[debug] [2024-02-15T18:19:57.418Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-02-15T18:19:57.418Z] [functions] Got req.url=/mealstogo-877b3/us-central1/geocode, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-877b3/us-central1/geocode, mapping to path=/"}}
+[debug] [2024-02-15T18:19:57.431Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2024-02-15T18:19:57.432Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2024-02-15T18:19:59.221Z] [runtime-status] [11312] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11312] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-15T18:19:59.222Z] [runtime-status] [11312] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11312] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-15T18:19:59.224Z] [runtime-status] [11312] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11312] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-02-15T18:19:59.225Z] [runtime-status] [11312] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11312] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-15T18:19:59.602Z] [runtime-status] [11312] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11312] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-02-15T18:19:59.603Z] [runtime-status] [11312] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11312] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-02-15T18:19:59.604Z] [runtime-status] [11312] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11312] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-15T18:19:59.607Z] [runtime-status] [11312] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11312] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-15T18:19:59.619Z] [runtime-status] [11312] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11312] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-15T18:19:59.620Z] [runtime-status] [11312] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11312] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-02-15T18:19:59.654Z] [runtime-status] [11312] Functions runtime initialized. {"cwd":"C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions","node_version":"20.10.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11312] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\User\\\\Downloads\\\\Coding\\\\ZTProjects\\\\MealsToGo\\\\functions\",\"node_version\":\"20.10.0\"}"}}
+[debug] [2024-02-15T18:19:59.655Z] [runtime-status] [11312] Listening to port: \\?\pipe\fire_emu_e1643e95a2c2335d {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [11312] Listening to port: \\\\?\\pipe\\fire_emu_e1643e95a2c2335d"}}
+[debug] [2024-02-15T18:19:59.682Z] [worker-us-central1-geocode-40ec7414-4c17-4c25-8b00-6f5f59a08eb2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[worker-us-central1-geocode-40ec7414-4c17-4c25-8b00-6f5f59a08eb2]: IDLE"}}
+[debug] [2024-02-15T18:19:59.683Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[info] i  functions: Beginning execution of "us-central1-geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"us-central1-geocode\""}}
+[debug] [2024-02-15T18:19:59.685Z] [worker-us-central1-geocode-40ec7414-4c17-4c25-8b00-6f5f59a08eb2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[worker-us-central1-geocode-40ec7414-4c17-4c25-8b00-6f5f59a08eb2]: BUSY"}}
+[warn] !  functions: TypeError: Cannot read properties of undefined (reading 'toLowerCase')
+    at module.exports.geocodeRequest (C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\geocode\index.js:6:43)
+    at C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\index.js:17:3
+    at cloudFunction (C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\firebase-functions\lib\v1\providers\https.js:51:16)
+    at C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:532:16
+    at runFunction (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:506:15)
+    at runHTTPS (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:531:11)
+    at C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:694:27
+    at Layer.handle [as handle_request] (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\route.js:144:13)
+    at next (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\express\lib\router\route.js:140:7) {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"TypeError: Cannot read properties of undefined (reading 'toLowerCase')\n    at module.exports.geocodeRequest (C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\geocode\\index.js:6:43)\n    at C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\index.js:17:3\n    at cloudFunction (C:\\Users\\User\\Downloads\\Coding\\ZTProjects\\MealsToGo\\functions\\node_modules\\firebase-functions\\lib\\v1\\providers\\https.js:51:16)\n    at C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:532:16\n    at runFunction (C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:506:15)\n    at runHTTPS (C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:531:11)\n    at C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:694:27\n    at Layer.handle [as handle_request] (C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at next (C:\\Users\\User\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\express\\lib\\router\\route.js:140:7)"}}
+[warn] !  Your function was killed because it raised an unhandled error. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Your function was killed because it raised an unhandled error."}}
+[debug] [2024-02-15T18:19:59.698Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-geocode" in 14.1514ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"us-central1-geocode\" in 14.1514ms"}}
+[debug] [2024-02-15T18:19:59.700Z] [worker-us-central1-geocode-40ec7414-4c17-4c25-8b00-6f5f59a08eb2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[worker-us-central1-geocode-40ec7414-4c17-4c25-8b00-6f5f59a08eb2]: IDLE"}}
+[debug] [2024-02-15T18:19:59.700Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-02-15T18:19:59.701Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-02-15T18:19:59.701Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-15T18:19:59.723Z] [worker-us-central1-geocode-40ec7414-4c17-4c25-8b00-6f5f59a08eb2]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[worker-us-central1-geocode-40ec7414-4c17-4c25-8b00-6f5f59a08eb2]: exited"}}
+[debug] [2024-02-15T18:19:59.723Z] [worker-us-central1-geocode-40ec7414-4c17-4c25-8b00-6f5f59a08eb2]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[worker-us-central1-geocode-40ec7414-4c17-4c25-8b00-6f5f59a08eb2]: FINISHED"}}
+[debug] [2024-02-15T18:19:59.761Z] Functions emulator received unknown request at path /favicon.ico

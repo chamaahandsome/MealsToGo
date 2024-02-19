@@ -4,6 +4,7 @@ import { locationRequest, locationTransform } from "./location.service";
 
 export const LocationContext = React.createContext();
 
+// eslint-disable-next-line react/prop-types
 export const LocationContextProvider = ({ children }) => {
   const [keyword, setKeyword] = useState("San Francisco");
   const [location, setLocation] = useState(null);
