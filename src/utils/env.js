@@ -3,6 +3,8 @@ const liveHost = "https://us-central1-mealstogo-877b3.cloudfunctions.net";
 
 export const isDevelopment = process.env.NODE_ENV === "development";
 
+export const isMock = false;
+
 // export const host = isDevelopment ? localHost : liveHost;
 
 export const host = liveHost;
