@@ -1,0 +1,83 @@
+[debug] [2024-03-12T17:12:51.306Z] ----------------------------------------------------------------------
+[debug] [2024-03-12T17:12:51.315Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2024-03-12T17:12:51.317Z] CLI Version:   13.4.0
+[debug] [2024-03-12T17:12:51.317Z] Platform:      win32
+[debug] [2024-03-12T17:12:51.318Z] Node Version:  v20.10.0
+[debug] [2024-03-12T17:12:51.319Z] Time:          Tue Mar 12 2024 13:12:51 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-03-12T17:12:51.319Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-12T17:12:51.678Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-12T17:12:51.679Z] > authorizing via signed-in user (timboywa1@gmail.com)
+[debug] [2024-03-12T17:12:51.680Z] [iam] checking project mealstogo-877b3 for permissions ["firebase.projects.get"]
+[debug] [2024-03-12T17:12:51.684Z] > refreshing access token with scopes: []
+[debug] [2024-03-12T17:12:51.691Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-03-12T17:12:51.692Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-12T17:12:52.219Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-03-12T17:12:52.220Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-12T17:12:52.241Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mealstogo-877b3:testIamPermissions [none]
+[debug] [2024-03-12T17:12:52.242Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mealstogo-877b3:testIamPermissions x-goog-quota-user=projects/mealstogo-877b3
+[debug] [2024-03-12T17:12:52.242Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mealstogo-877b3:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-03-12T17:12:52.510Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mealstogo-877b3:testIamPermissions 200
+[debug] [2024-03-12T17:12:52.510Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mealstogo-877b3:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-03-12T17:12:52.514Z] >>> [apiv2][query] GET http://127.0.0.1:4400/emulators [none]
+[debug] [2024-03-12T17:12:52.534Z] <<< [apiv2][status] GET http://127.0.0.1:4400/emulators 200
+[debug] [2024-03-12T17:12:52.534Z] <<< [apiv2][body] GET http://127.0.0.1:4400/emulators {"hub":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"name":"hub","host":"127.0.0.1","port":4400},"ui":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"name":"ui","host":"127.0.0.1","port":4000,"pid":11528},"logging":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"name":"logging","host":"127.0.0.1","port":4500},"functions":{"name":"functions","host":"127.0.0.1","port":5001},"eventarc":{"name":"eventarc","host":"127.0.0.1","port":9299}}
+[debug] [2024-03-12T17:12:52.535Z] Running emulators:  {"hub":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"name":"hub","host":"127.0.0.1","port":4400},"ui":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"name":"ui","host":"127.0.0.1","port":4000,"pid":11528},"logging":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"name":"logging","host":"127.0.0.1","port":4500},"functions":{"name":"functions","host":"127.0.0.1","port":5001},"eventarc":{"name":"eventarc","host":"127.0.0.1","port":9299}}
+[warn] !  functions: You are already running the Cloud Functions emulator on port 5001. Running the emulator and the Functions shell simultaenously can result in unexpected behavior. 
+[debug] [2024-03-12T17:12:52.556Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-03-12T17:12:52.561Z] defaultcredentials: writing to file C:\Users\User\AppData\Roaming\firebase\timboywa1_gmail_com_application_default_credentials.json
+[debug] [2024-03-12T17:12:52.564Z] DEBUG: Setting GAC to C:\Users\User\AppData\Roaming\firebase\timboywa1_gmail_com_application_default_credentials.json
+[debug] [2024-03-12T17:12:52.566Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-877b3/adminSdkConfig [none]
+[debug] [2024-03-12T17:12:53.142Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-877b3/adminSdkConfig 200
+[debug] [2024-03-12T17:12:53.142Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-877b3/adminSdkConfig {"projectId":"mealstogo-877b3","storageBucket":"mealstogo-877b3.appspot.com"}
+[debug] [2024-03-12T17:12:53.173Z] [functions] Watching "C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions" for Cloud Functions...
+[debug] [2024-03-12T17:12:53.186Z] Validating nodejs source
+[debug] [2024-03-12T17:13:03.283Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\Windows\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+    at async FunctionsEmulator.connect (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:262:13)
+    at async FunctionsServer.connect (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\functions.js:55:9)
+[debug] [2024-03-12T17:13:03.285Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.3.42",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.8.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-03-12T17:13:03.286Z] Building nodejs source
+[debug] [2024-03-12T17:13:03.288Z] Failed to find version of module node: reached end of search path C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules
+[info] +  functions: Using node@20 from host. 
+[debug] [2024-03-12T17:13:03.297Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-12T17:13:03.320Z] Found firebase-functions binary at 'C:\Users\User\Downloads\Coding\ZTProjects\MealsToGo\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8683
+
+[debug] [2024-03-12T17:13:06.075Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-03-12T17:13:11.136Z] [functions] Loaded functions definitions from source: geocode, placesNearby.
+[debug] [2024-03-12T17:13:11.137Z] [functions[us-central1-geocode]] http function initialized (http://127.0.0.1:5000/mealstogo-877b3/us-central1/geocode).
+[debug] [2024-03-12T17:13:11.137Z] [functions[us-central1-placesNearby]] http function initialized (http://127.0.0.1:5000/mealstogo-877b3/us-central1/placesNearby).
+[info] i  functions: Loaded functions: geocode, placesNearby 
+[info] i  functions: Connected to running eventarc emulator at 127.0.0.1:9299, calls to this service will affect the emulator 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub, storage 
